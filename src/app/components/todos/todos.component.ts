@@ -17,6 +17,9 @@ export class TodosComponent implements OnInit {
    this.todoService.getTodos().subscribe(todos => {
      this.todos = todos;
    });
+
+   this.todoService.checkUpdate();
+   this.todoService.updateApp();
   }
 
   deleteTodo(todo:Todo){
@@ -31,5 +34,5 @@ export class TodosComponent implements OnInit {
       this.todos.push(todo);
     })
   }
-  
+
 }

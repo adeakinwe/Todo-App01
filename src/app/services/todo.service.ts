@@ -1,7 +1,8 @@
-import { Injectable } from '@angular/core';
+import { Injectable, ApplicationRef } from '@angular/core';
 import {HttpClient, HttpHeaders } from '@angular/common/http';
-import {Observable} from 'rxjs';
+import {Observable, interval} from 'rxjs';
 import { Todo } from '../models/todo';
+import { SwUpdate } from '@angular/service-worker';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -16,7 +17,7 @@ export class TodoService {
   todosLimit = '?_limit=5';
   todosUrl:string = 'https://jsonplaceholder.typicode.com/todos';
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient, private update: SwUpdate , private appRef: ApplicationRef) { }
 
   getTodos():Observable<Todo[]> {
     return this.http.get<Todo[]>(`${this.todosUrl}${this.todosLimit}`);
@@ -35,5 +36,33 @@ export class TodoService {
     const url = `${this.todosUrl}/${todo.id}`;
     return this.http.put(url, todo, httpOptions)
   }
-  
+
+  updateApp(){
+    if(!this.update.isEnabled){
+      console.log("Not Enabled");
+      return;
+    }
+    this.update.available.subscribe((event)=>{
+      if(confirm("New update is available for this app")){
+        this.update.activateUpdate().then(()=>location.reload());
+      }
+    });
+
+    this.update.activated.subscribe((event)=>{
+      console.log(`current, ${event.previous}, available, ${event.current}`)
+    })
+  }
+
+  checkUpdate(){
+    this.appRef.isStable.subscribe((isStable)=>{
+      if(isStable){
+        const timeInterval = interval(10*3600*1000);
+
+        timeInterval.subscribe(()=>{
+          this.update.checkForUpdate().then(()=> console.log('checked'));
+          console.log('Update Checked!');
+        });
+      }
+    })
+  }
 }
