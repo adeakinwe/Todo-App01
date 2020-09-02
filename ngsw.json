@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1599057645608,
+  "timestamp": 1599059184483,
   "index": "https://adeakinwe.github.io/TaskApp/index.html",
   "assetGroups": [
     {
@@ -68,7 +68,7 @@
     "https://adeakinwe.github.io/TaskApp/index.html": "d65c1a44f85ec937053f1c554f57dbb5e792f075",
     "https://adeakinwe.github.io/TaskApp/main-es2015.3e0c8e585a2b6154bc70.js": "b52235641c5e2e9eba2d92f0f165491809d7f372",
     "https://adeakinwe.github.io/TaskApp/main-es5.3e0c8e585a2b6154bc70.js": "b873eeaff9b844748aeb2c8922b8c2eee031b264",
-    "https://adeakinwe.github.io/TaskApp/manifest.webmanifest": "8b67685bb17b8b6d937a7dd2f07d2260458b1c61",
+    "https://adeakinwe.github.io/TaskApp/manifest.webmanifest": "59aae96b6fe88c683239ecc9090b8108c8460beb",
     "https://adeakinwe.github.io/TaskApp/polyfills-es2015.5b10b8fd823b6392f1fd.js": "9abfe15f17820a646e3d51c420908d9f8f7b69b8",
     "https://adeakinwe.github.io/TaskApp/polyfills-es5.3e8196928d184a6e5319.js": "a09a6044f37c73c715665663d2dcb61f666618a1",
     "https://adeakinwe.github.io/TaskApp/runtime-es2015.c5fa8325f89fc516600b.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
