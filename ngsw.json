@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1599819517313,
+  "timestamp": 1599820782521,
   "index": "https://adeakinwe.github.io/TaskApp/index.html",
   "assetGroups": [
     {
@@ -65,7 +65,7 @@
     "https://adeakinwe.github.io/TaskApp/fontawesome-webfont.af7ae505a9eed503f8b8.woff2": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c",
     "https://adeakinwe.github.io/TaskApp/fontawesome-webfont.b06871f281fee6b241d6.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
     "https://adeakinwe.github.io/TaskApp/fontawesome-webfont.fee66e712a8a08eef580.woff": "28b782240b3e76db824e12c02754a9731a167527",
-    "https://adeakinwe.github.io/TaskApp/index.html": "bded8d05723525caa7e4db633c115b234644db12",
+    "https://adeakinwe.github.io/TaskApp/index.html": "d9e20e5630db980f5350100f27dbab97eff26b96",
     "https://adeakinwe.github.io/TaskApp/main-es2015.3e0c8e585a2b6154bc70.js": "b52235641c5e2e9eba2d92f0f165491809d7f372",
     "https://adeakinwe.github.io/TaskApp/main-es5.3e0c8e585a2b6154bc70.js": "b873eeaff9b844748aeb2c8922b8c2eee031b264",
     "https://adeakinwe.github.io/TaskApp/manifest.webmanifest": "0a7ef91234d9a6318cf9fd6d8de46b34745bc55a",
